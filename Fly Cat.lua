@@ -15,9 +15,7 @@ local Flyon = Instance.new("Frame")
 local W = Instance.new("TextButton")
 local S = Instance.new("TextButton")
 
---Properties:
-
-Flymguiv2.Name = "Flym gui v2"
+Flymguiv2.Name = "Fly Cat"
 Flymguiv2.Parent = game.CoreGui
 Flymguiv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -73,7 +71,7 @@ Fly.BorderSizePixel = 0
 Fly.Position = UDim2.new(0.0759493634, 0, 0.705797076, 0)
 Fly.Size = UDim2.new(0, 199, 0, 32)
 Fly.Font = Enum.Font.SourceSans
-Fly.Text = "Fly"
+Fly.Text = "开启"
 Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
 Fly.TextScaled = true
 Fly.TextSize = 14.000
@@ -96,7 +94,7 @@ Fly.MouseButton1Click:Connect(function()
 	end)
 end)
 
-Speeed.Name = "Speeed"
+Speeed.Name = "Speed"
 Speeed.Parent = FlyFrame
 Speeed.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 Speeed.BorderSizePixel = 0
