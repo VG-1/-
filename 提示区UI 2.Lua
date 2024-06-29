@@ -17,14 +17,14 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     ambientShadow.Position = UDim2.new(0.91525954, 0, 0.936809778, 0)
     ambientShadow.Size = UDim2.new(0, 0, 0, 0)
     ambientShadow.Image = "rbxassetid//18216647696"
-    ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+    ambientShadow.ImageColor3 = Color3.fromRGB(102, 255, 153)
     ambientShadow.ImageTransparency = 0.400
     ambientShadow.ScaleType = Enum.ScaleType.Slice
     ambientShadow.SliceCenter = Rect.new(10, 10, 118, 118)
     
     Window.Name = "Window"
     Window.Parent = ambientShadow
-    Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+    Window.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
     Window.BorderSizePixel = 0
     Window.Position = UDim2.new(0, 5, 0, 5)
     Window.Size = UDim2.new(0, 230, 0, 80)
@@ -40,7 +40,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     
     WindowTitle.Name = "WindowTitle"
     WindowTitle.Parent = Window
-    WindowTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    WindowTitle.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
     WindowTitle.BackgroundTransparency = 1.000
     WindowTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowTitle.BorderSizePixel = 0
@@ -49,22 +49,22 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowTitle.ZIndex = 4
     WindowTitle.Font = Enum.Font.GothamSemibold
     WindowTitle.Text = nofdebug.Title
-    WindowTitle.TextColor3 = Color3.fromRGB(220, 220, 220)
+    WindowTitle.TextColor3 = Color3.fromRGB(102, 255, 153)
     WindowTitle.TextSize = 12.000
     WindowTitle.TextXAlignment = Enum.TextXAlignment.Left
     
     WindowDescription.Name = "WindowDescription"
     WindowDescription.Parent = Window
-    WindowDescription.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    WindowDescription.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
     WindowDescription.BackgroundTransparency = 1.000
-    WindowDescription.BorderColor3 = Color3.fromRGB(27, 42, 53)
+    WindowDescription.BorderColor3 = Color3.fromRGB(102, 255, 153)
     WindowDescription.BorderSizePixel = 0
     WindowDescription.Position = UDim2.new(0, 8, 0, 34)
     WindowDescription.Size = UDim2.new(0, 216, 0, 40)
     WindowDescription.ZIndex = 4
     WindowDescription.Font = Enum.Font.GothamSemibold
     WindowDescription.Text = nofdebug.Description
-    WindowDescription.TextColor3 = Color3.fromRGB(180, 180, 180)
+    WindowDescription.TextColor3 = Color3.fromRGB(102, 255, 153)
     WindowDescription.TextSize = 12.000
     WindowDescription.TextWrapped = true
     WindowDescription.TextXAlignment = Enum.TextXAlignment.Left
@@ -92,7 +92,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         WindowTitle.Position = UDim2.new(0, 24, 0, 2)
         local ImageButton = Instance.new("ImageButton")
         ImageButton.Parent = Window
-        ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        ImageButton.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
         ImageButton.BackgroundTransparency = 1.000
         ImageButton.BorderSizePixel = 0
         ImageButton.Position = UDim2.new(0, 4, 0, 4)
@@ -123,7 +123,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         
         Uncheck.Name = "Uncheck"
         Uncheck.Parent = Window
-        Uncheck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Uncheck.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
         Uncheck.BackgroundTransparency = 1.000
         Uncheck.BorderSizePixel = 0
         Uncheck.Position = UDim2.new(0, 7, 0, 76)
@@ -131,11 +131,11 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         Uncheck.ZIndex = 5
         Uncheck.AutoButtonColor = false
         Uncheck.Image = "http://www.roblox.com/asset/?id=18216647696"
-        Uncheck.ImageColor3 = Color3.fromRGB(255, 84, 84)
+        Uncheck.ImageColor3 = Color3.fromRGB(102, 255, 153)
         
         Check.Name = "Check"
         Check.Parent = Window
-        Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Check.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
         Check.BackgroundTransparency = 1.000
         Check.BorderSizePixel = 0
         Check.Position = UDim2.new(0, 28, 0, 76)
@@ -143,7 +143,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         Check.ZIndex = 5
         Check.AutoButtonColor = false
         Check.Image = "http://www.roblox.com/asset/?id=18216647696"
-        Check.ImageColor3 = Color3.fromRGB(83, 230, 50)
+        Check.ImageColor3 = Color3.fromRGB(102, 255, 153)
 
         local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
