@@ -1,7 +1,7 @@
  --[[究极改装]]
 local KingScriptFly = Instance.new("ScreenGui")
 local Drag = Instance.new("Frame")
-local FlyFrame = Instance.new("Frame")
+local KingFlyCatname = Instance.new("Frame")
 local ddnsfbfwewefe = Instance.new("TextButton")
 local Speed = Instance.new("TextBox")
 local Fly = Instance.new("TextButton")
@@ -24,22 +24,22 @@ KingScriptFly.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Drag.Name = "Drag"
 Drag.Parent = KingScriptFly
 Drag.Active = true
-Drag.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
+Drag.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Drag.BorderSizePixel = 0
 Drag.Draggable = true
 Drag.Position = UDim2.new(0.482438415, 0, 0.454874992, 0)
 Drag.Size = UDim2.new(0, 237, 0, 27)
 
-FlyFrame.Name = "FlyFrame"
-FlyFrame.Parent = Drag
-FlyFrame.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
-FlyFrame.BorderSizePixel = 0
-FlyFrame.Draggable = true
-FlyFrame.Position = UDim2.new(-0.00200000009, 0, 0.989000022, 0)
-FlyFrame.Size = UDim2.new(0, 237, 0, 139)
+KingFlyCatname.Name = "KingFlyCatname"
+KingFlyCatname.Parent = Drag
+KingFlyCatname.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
+KingFlyCatname.BorderSizePixel = 0
+KingFlyCatname.Draggable = true
+KingFlyCatname.Position = UDim2.new(-0.00200000009, 0, 0.989000022, 0)
+KingFlyCatname.Size = UDim2.new(0, 237, 0, 139)
 
 ddnsfbfwewefe.Name = "ddnsfbfwewefe"
-ddnsfbfwewefe.Parent = FlyFrame
+ddnsfbfwewefe.Parent = KingFlyCatname
 ddnsfbfwewefe.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
 ddnsfbfwewefe.BorderSizePixel = 0
 ddnsfbfwewefe.Position = UDim2.new(-0.000210968778, 0, -0.00395679474, 0)
@@ -52,7 +52,7 @@ ddnsfbfwewefe.TextSize = 14.000
 ddnsfbfwewefe.TextWrapped = true
 
 Speed.Name = "输入数值"
-Speed.Parent = FlyFrame
+Speed.Parent = KingFlyCatname
 Speed.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 Speed.BorderColor3 = Color3.fromRGB(0, 0, 191)
 Speed.BorderSizePixel = 0
@@ -67,7 +67,7 @@ Speed.TextSize = 14.000
 Speed.TextWrapped = true
 
 Fly.Name = "Fly"
-Fly.Parent = FlyFrame
+Fly.Parent = KingFlyCatname
 Fly.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
 Fly.BorderSizePixel = 0
 Fly.Position = UDim2.new(0.0759493634, 0, 0.705797076, 0)
@@ -81,7 +81,7 @@ Fly.TextWrapped = true
 Fly.MouseButton1Click:Connect(function()
 	local HumanoidRP = game.Players.LocalPlayer.Character.HumanoidRootPart
 	Fly.Visible = false
-	Stat2.Text = "On"
+	Stat2.Text = "开启"
 	Stat2.TextColor3 = Color3.fromRGB(0, 255, 0)
 	Unfly.Visible = true
 	Flyon.Visible = true
@@ -97,7 +97,7 @@ Fly.MouseButton1Click:Connect(function()
 end)
 
 Speeed.Name = "Speeed"
-Speeed.Parent = FlyFrame
+Speeed.Parent = KingFlyCatname
 Speeed.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 Speeed.BorderSizePixel = 0
 Speeed.Position = UDim2.new(0.0759493634, 0, 0.402877688, 0)
@@ -110,34 +110,34 @@ Speeed.TextScaled = true
 Speeed.TextSize = 14.000
 Speeed.TextWrapped = true
 
-Stat.Name = "Stat"
-Stat.Parent = FlyFrame
+Stat.Name = "状态"
+Stat.Parent = KingFlyCatname
 Stat.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 Stat.BorderSizePixel = 0
 Stat.Position = UDim2.new(0.299983799, 0, 0.239817441, 0)
 Stat.Size = UDim2.new(0, 85, 0, 15)
 Stat.Font = Enum.Font.SourceSans
-Stat.Text = "Status:"
+Stat.Text = "状态:"
 Stat.TextColor3 = Color3.fromRGB(255, 255, 255)
 Stat.TextScaled = true
 Stat.TextSize = 14.000
 Stat.TextWrapped = true
 
 Stat2.Name = "Stat2"
-Stat2.Parent = FlyFrame
+Stat2.Parent = KingFlyCatname
 Stat2.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 Stat2.BorderSizePixel = 0
 Stat2.Position = UDim2.new(0.546535194, 0, 0.239817441, 0)
 Stat2.Size = UDim2.new(0, 27, 0, 15)
 Stat2.Font = Enum.Font.SourceSans
-Stat2.Text = "Off"
+Stat2.Text = "关闭"
 Stat2.TextColor3 = Color3.fromRGB(255, 0, 0)
 Stat2.TextScaled = true
 Stat2.TextSize = 14.000
 Stat2.TextWrapped = true
 
 Unfly.Name = "Unfly"
-Unfly.Parent = FlyFrame
+Unfly.Parent = KingFlyCatname
 Unfly.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
 Unfly.BorderSizePixel = 0
 Unfly.Position = UDim2.new(0.0759493634, 0, 0.705797076, 0)
@@ -145,14 +145,14 @@ Unfly.Size = UDim2.new(0, 199, 0, 32)
 Unfly.Visible = false
 Unfly.Font = Enum.Font.SourceSans
 Unfly.Text = "Disable"
-Unfly.TextColor3 = Color3.fromRGB(102, 255, 153)
+Unfly.TextColor3 = Color3.fromRGB(255, 0, 0)
 Unfly.TextScaled = true
 Unfly.TextSize = 14.000
 Unfly.TextWrapped = true
 Unfly.MouseButton1Click:Connect(function()
 	local HumanoidRP = game.Players.LocalPlayer.Character.HumanoidRootPart
 	Fly.Visible = true
-	Stat2.Text = "关"
+	Stat2.Text = "关闭"
 	Stat2.TextColor3 = Color3.fromRGB(255, 0, 0)
 	wait()
 	Unfly.Visible = false
@@ -168,7 +168,7 @@ Vfly.BorderSizePixel = 0
 Vfly.Size = UDim2.new(0, 57, 0, 27)
 Vfly.Font = Enum.Font.SourceSans
 Vfly.Text = "Fly Cat"
-Vfly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vfly.TextColor3 = Color3.fromRGB(255, 0, 0)
 Vfly.TextScaled = true
 Vfly.TextSize = 14.000
 Vfly.TextWrapped = true
@@ -181,7 +181,7 @@ Close.Position = UDim2.new(0.875, 0, 0, 0)
 Close.Size = UDim2.new(0, 27, 0, 27)
 Close.Font = Enum.Font.SourceSans
 Close.Text = "关"
-Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
@@ -191,23 +191,23 @@ end)
 
 Minimize.Name = "Minimize"
 Minimize.Parent = Drag
-Minimize.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Minimize.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
 Minimize.BorderSizePixel = 0
 Minimize.Position = UDim2.new(0.75, 0, 0, 0)
 Minimize.Size = UDim2.new(0, 27, 0, 27)
 Minimize.Font = Enum.Font.SourceSans
 Minimize.Text = "-"
-Minimize.TextColor3 = Color3.fromRGB(255, 255, 255)
+Minimize.TextColor3 = Color3.fromRGB(255, 0, 0)
 Minimize.TextScaled = true
 Minimize.TextSize = 14.000
 Minimize.TextWrapped = true
 function Mini()
-	if Minimize.Text == "-" then
-		Minimize.Text = "+"
-		FlyFrame.Visible = false
-	elseif Minimize.Text == "+" then
-		Minimize.Text = "-"
-		FlyFrame.Visible = true
+	if Minimize.Text == "缩" then
+		Minimize.Text = "放"
+		KingFlyCatname.Visible = false
+	elseif Minimize.Text == "放" then
+		Minimize.Text = "缩"
+		KingFlyCatname.Visible = true
 	end
 end
 Minimize.MouseButton1Click:Connect(Mini)
@@ -229,8 +229,8 @@ W.BorderSizePixel = 0
 W.Position = UDim2.new(0.134719521, 0, 0.0152013302, 0)
 W.Size = UDim2.new(0.708999991, 0, 0.499000013, 0)
 W.Font = Enum.Font.SourceSans
-W.Text = "^"
-W.TextColor3 = Color3.fromRGB(255, 255, 255)
+W.Text = "前"
+W.TextColor3 = Color3.fromRGB(255, 0, 0)
 W.TextScaled = true
 W.TextSize = 14.000
 W.TextWrapped = true
@@ -292,8 +292,8 @@ S.Position = UDim2.new(0.134000003, 0, 0.479999989, 0)
 S.Rotation = 180.000
 S.Size = UDim2.new(0.708999991, 0, 0.499000013, 0)
 S.Font = Enum.Font.SourceSans
-S.Text = "^"
-S.TextColor3 = Color3.fromRGB(255, 255, 255)
+S.Text = "后"
+S.TextColor3 = Color3.fromRGB(255, 0, 0)
 S.TextScaled = true
 S.TextSize = 14.000
 S.TextWrapped = true
