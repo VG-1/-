@@ -1,4 +1,5 @@
-local Flymguiv2 = Instance.new("ScreenGui")
+ --[[究极改装]]
+local KingScriptFly = Instance.new("ScreenGui")
 local Drag = Instance.new("Frame")
 local FlyFrame = Instance.new("Frame")
 local ddnsfbfwewefe = Instance.new("TextButton")
@@ -15,14 +16,15 @@ local Flyon = Instance.new("Frame")
 local W = Instance.new("TextButton")
 local S = Instance.new("TextButton")
 
-Flymguiv2.Name = "Fly Cat"
-Flymguiv2.Parent = game.CoreGui
-Flymguiv2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+KingScriptFly.Name = "King Script Fly"
+KingScriptFly.Parent = game.CoreGui
+KingScriptFly.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Drag.Name = "Drag"
-Drag.Parent = Flymguiv2
+Drag.Parent = KingScriptFly
 Drag.Active = true
-Drag.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
+Drag.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
 Drag.BorderSizePixel = 0
 Drag.Draggable = true
 Drag.Position = UDim2.new(0.482438415, 0, 0.454874992, 0)
@@ -30,7 +32,7 @@ Drag.Size = UDim2.new(0, 237, 0, 27)
 
 FlyFrame.Name = "FlyFrame"
 FlyFrame.Parent = Drag
-FlyFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
+FlyFrame.BackgroundColor3 = Color3.fromRGB(102, 255, 153)
 FlyFrame.BorderSizePixel = 0
 FlyFrame.Draggable = true
 FlyFrame.Position = UDim2.new(-0.00200000009, 0, 0.989000022, 0)
@@ -43,13 +45,13 @@ ddnsfbfwewefe.BorderSizePixel = 0
 ddnsfbfwewefe.Position = UDim2.new(-0.000210968778, 0, -0.00395679474, 0)
 ddnsfbfwewefe.Size = UDim2.new(0, 237, 0, 27)
 ddnsfbfwewefe.Font = Enum.Font.SourceSans
-ddnsfbfwewefe.Text = "King飞车"
+ddnsfbfwewefe.Text = "King Fly Cat"
 ddnsfbfwewefe.TextColor3 = Color3.fromRGB(255, 255, 255)
 ddnsfbfwewefe.TextScaled = true
 ddnsfbfwewefe.TextSize = 14.000
 ddnsfbfwewefe.TextWrapped = true
 
-Speed.Name = "数值"
+Speed.Name = "输入数值"
 Speed.Parent = FlyFrame
 Speed.BackgroundColor3 = Color3.fromRGB(63, 63, 63)
 Speed.BorderColor3 = Color3.fromRGB(0, 0, 191)
@@ -72,7 +74,7 @@ Fly.Position = UDim2.new(0.0759493634, 0, 0.705797076, 0)
 Fly.Size = UDim2.new(0, 199, 0, 32)
 Fly.Font = Enum.Font.SourceSans
 Fly.Text = "开启"
-Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextColor3 = Color3.fromRGB(102, 255, 153)
 Fly.TextScaled = true
 Fly.TextSize = 14.000
 Fly.TextWrapped = true
@@ -94,7 +96,7 @@ Fly.MouseButton1Click:Connect(function()
 	end)
 end)
 
-Speeed.Name = "Speed"
+Speeed.Name = "Speeed"
 Speeed.Parent = FlyFrame
 Speeed.BackgroundColor3 = Color3.fromRGB(80, 80, 80)
 Speeed.BorderSizePixel = 0
@@ -102,7 +104,7 @@ Speeed.Position = UDim2.new(0.0759493634, 0, 0.402877688, 0)
 Speeed.Size = UDim2.new(0, 87, 0, 32)
 Speeed.ZIndex = 0
 Speeed.Font = Enum.Font.SourceSans
-Speeed.Text = "Speed:"
+Speeed.Text = "速度:"
 Speeed.TextColor3 = Color3.fromRGB(255, 255, 255)
 Speeed.TextScaled = true
 Speeed.TextSize = 14.000
@@ -143,14 +145,14 @@ Unfly.Size = UDim2.new(0, 199, 0, 32)
 Unfly.Visible = false
 Unfly.Font = Enum.Font.SourceSans
 Unfly.Text = "Disable"
-Unfly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unfly.TextColor3 = Color3.fromRGB(102, 255, 153)
 Unfly.TextScaled = true
 Unfly.TextSize = 14.000
 Unfly.TextWrapped = true
 Unfly.MouseButton1Click:Connect(function()
 	local HumanoidRP = game.Players.LocalPlayer.Character.HumanoidRootPart
 	Fly.Visible = true
-	Stat2.Text = "关闭"
+	Stat2.Text = "关"
 	Stat2.TextColor3 = Color3.fromRGB(255, 0, 0)
 	wait()
 	Unfly.Visible = false
@@ -165,7 +167,7 @@ Vfly.BackgroundColor3 = Color3.fromRGB(0, 150, 191)
 Vfly.BorderSizePixel = 0
 Vfly.Size = UDim2.new(0, 57, 0, 27)
 Vfly.Font = Enum.Font.SourceSans
-Vfly.Text = "King"
+Vfly.Text = "Fly Cat"
 Vfly.TextColor3 = Color3.fromRGB(255, 255, 255)
 Vfly.TextScaled = true
 Vfly.TextSize = 14.000
@@ -178,13 +180,13 @@ Close.BorderSizePixel = 0
 Close.Position = UDim2.new(0.875, 0, 0, 0)
 Close.Size = UDim2.new(0, 27, 0, 27)
 Close.Font = Enum.Font.SourceSans
-Close.Text = "X"
+Close.Text = "关"
 Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextScaled = true
 Close.TextSize = 14.000
 Close.TextWrapped = true
 Close.MouseButton1Click:Connect(function()
-	Flymguiv2:Destroy()
+	KingScriptFly:Destroy()
 end)
 
 Minimize.Name = "Minimize"
@@ -211,7 +213,7 @@ end
 Minimize.MouseButton1Click:Connect(Mini)
 
 Flyon.Name = "Fly on"
-Flyon.Parent = Flymguiv2
+Flyon.Parent = KingScriptFly
 Flyon.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 Flyon.BorderSizePixel = 0
 Flyon.Position = UDim2.new(0.117647067, 0, 0.550284624, 0)
