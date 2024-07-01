@@ -37,9 +37,9 @@ local setup = win:Tab("介绍")
     setup:Label("King谢谢支持")
     setup:Label("副作者:龙叔【别被冒充的龙叔的圈了】")
     setup:Label("帮助者:白貓，钢筋，无xia，无极，清岩")
-    setup:Label("本次开启为旗帜战争脚本")
+    setup:Label("本次开启为""战争脚本")
     
-    linni:Button("点击我复制QQ群链接",function()
+    setup:Button("点击我复制QQ群链接",function()
 setclipboard("霖溺QQ新主群https://qm.qq.com/q/SU0hmhIvwk")
 end)
 
