@@ -31,20 +31,18 @@ end)
 local UILib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hunryn/VB/main/libKINGuI.lUa"))()
 local win = UILib:Window("King Script丨旗帜战争",Color3.fromRGB(102, 255, 153), Enum.KeyCode.RightControl)
 
-local setup = win:Tab("介绍")
+local setup = win:Tab("脚本介绍")
     setup:Label("King客户名:"..game.Players.LocalPlayer.Character.Name)
     setup:Label("King授权的注入器:"..identifyexecutor())
     setup:Label("King谢谢支持")
     setup:Label("副作者:龙叔【别被冒充的龙叔的圈了】")
     setup:Label("帮助者:白貓，钢筋，无xia，无极，清岩")
-    setup:Label("本次开启为""战争脚本")
-    
+    setup:Label("本次开启为旗帜战争脚本")
     setup:Button("点击我复制QQ群链接",function()
 setclipboard("霖溺QQ新主群https://qm.qq.com/q/SU0hmhIvwk")
 end)
 
-local tab = win:Tab("主要")
-
+local tab = win:Tab("主要功能")
 tab:Toggle("范围", false, function(state)
     local currPlayer = game:GetService('Players').LocalPlayer
     local servPlayer = game:GetService('Players')
