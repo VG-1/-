@@ -1,4 +1,3 @@
---fwYF小天破解源码圈钱狗卖十元白名单
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Hunryn/VB/main/OrionLib.ui.lua"))()
 local Window = OrionLib:MakeWindow({Name = 'KING', HidePremium = false, SaveConfig = true, ConfigFolder = '俄亥俄州', IntroText = ' BY KING'})
 OrionLib:MakeNotification({
