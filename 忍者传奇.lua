@@ -282,3 +282,4 @@ end)
 
 tab3:Button("传送至死亡宠物", function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4593.21337890625, 130.87181091308594, 1430.2239990234375)
+end)
