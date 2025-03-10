@@ -1,6 +1,6 @@
 local ESP = {
     Enabled = false,
-    Highlight = true,  -- 将 Names 改为 Highlight
+    Highlight = true,
     Color = Color3.fromRGB(255, 170, 0),
     FaceCamera = false,
     TeamColor = true,
@@ -71,7 +71,7 @@ function ESP:Toggle(bool)
     self.Enabled = bool
     if not bool then
         for i,v in pairs(self.Objects) do
-            if v.Type == "Box" then --fov circle etc
+            if v.Type == "Box" then 
                 if v.Temporary then
                     v:Remove()
                 else
@@ -189,8 +189,6 @@ function boxBase:Update()
         Torso = cf * ESP.BoxShift
     }
 
-    -- 删除 Name ESP 和 Box ESP 的绘制逻辑
-    -- 这里不再绘制任何文本或方框
 end
 
 function ESP:Add(obj, options)
@@ -201,7 +199,7 @@ function ESP:Add(obj, options)
     local box = setmetatable({
         Name = options.Name or obj.Name,
         Type = "Box",
-        Color = options.Color --[[or self:GetColor(obj)]],
+        Color = options.Color ,
         Size = options.Size or self.BoxSize,
         Object = obj,
         Player = options.Player or plrs:GetPlayerFromCharacter(obj),
@@ -217,8 +215,6 @@ function ESP:Add(obj, options)
         self:GetBox(obj):Remove()
     end
 
-    -- 删除 Name 和 Distance 的绘制
-    -- 不再创建 Drawing.Text 对象
 
     self.Objects[obj] = box
     
